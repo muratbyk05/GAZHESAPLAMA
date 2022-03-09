@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="code.css">
+</head>
+<body>
+    <body onload="yillar()">
+        <form action="#">
+
+          <label for="secimLtBulma">gazın metreküp  Bulma</label>
+          <input type="radio" name="secim" id="secimLtBulma" checked>
+
+          <label for="secimTlBulma">TL Bulma</label>
+          <input type="radio" name="secim" id="secimTlBulma">
+
+          <span id="hesap1">
+            <label for="txtPara">Bu paraya kaç metreküp  gaz alırım?</label>
+            <input type="text" id="txtPara" required>
+          </span>
+
+          <span id="hesap2">
+            <label for="txtgaz">Bu kadar gaz metreküp  ne kadara alırım?</label>
+            <input type="text" id="txtgaz" required>
+          </span>
+
+          <label for="listeYillar">Yıl seçiniz:</label>
+          <select name="" id="listeYillar">
+      
+          </select>
+          <input type="submit" value="Hesapla" onclick="hesapla()">
+
+        </form>
+        <h3 id="sonuc"></h3>
+      </body>
+
+      <script src="code.js"></script>
+</body>
+</html>
